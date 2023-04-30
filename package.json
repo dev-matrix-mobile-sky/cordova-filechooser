@@ -9,7 +9,7 @@
     "build": "npm run clean && npm run docgen && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build",
-    "watch": "tsc --watch",
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "@capacitor/android": "latest",
