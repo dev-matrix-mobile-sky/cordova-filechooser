@@ -1,18 +1,11 @@
 {
   "name": "cordova-plugin-filechooser",
+  "version": "1.1.0",
   "version": "1.2.0",
   "description": "Cordova FileChooser Plugin",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf ./dist",
-    "build": "npm run clean && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run build",
-    "watch": "tsc --watch"
-  },
-  "devDependencies": {
-    "rimraf": "^3.0.2",
-    "typescript": "~4.7.4"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
