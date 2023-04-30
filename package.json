@@ -5,23 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "docgen": "docgen --api FileChooserPlugin --output-readme README.md --output-json dist/docs.json",
-    "build": "npm run clean && npm run docgen && tsc",
+    "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run build",
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@capacitor/android": "latest",
-    "@capacitor/core": "latest",
-    "@capacitor/docgen": "^0.2.0",
-    "@ionic/eslint-config": "^0.3.0",
-    "@ionic/prettier-config": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
-    "prettier": "~2.7.1",
-    "prettier-plugin-java": "~1.6.2",
     "rimraf": "^3.0.2",
     "typescript": "~4.7.4"
   },
