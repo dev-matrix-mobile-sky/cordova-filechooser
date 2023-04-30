@@ -44,6 +44,10 @@ public class FileChooser extends CordovaPlugin {
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
 
+        //LA CHANGE: multiple mime types support
+        String[] mimetypes = uri_filter.split("\\,");
+        intent.putExtra(Intent.EXTRA_MIME_TYPES,mimetypes);
+
         Intent chooser = Intent.createChooser(intent, "Select File");
         cordova.startActivityForResult(this, chooser, PICK_FILE_REQUEST);
 
